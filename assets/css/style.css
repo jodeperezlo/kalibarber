@@ -99,6 +99,9 @@ img {
   -moz-box-shadow: 0 5px 5px -4px rgba(0, 0, 0, 0.7);
   box-shadow: 0 5px 5px -4px rgb(0 0 0 / 53%);
 }
+label {
+  padding: 0.5rem 0;
+}
 textarea {
   resize: none;
 }
