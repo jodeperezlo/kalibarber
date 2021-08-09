@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbería</title>
+
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css">
+    <!-- Style -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body data-spy="scroll" data-target="#mainNav">
+
+    <!-- Navbar -->
+    <nav id="mainNavbar" class="navbar navbar-dark bg-dark navbar-expand-md fixed-top navbar-main shadow-sm">
+        <div class="container">
+            <!-- Branding -->
+            <a href="index.html" class="navbar-brand">
+                <span class="fw-bold">Barber</span>Shop
+            </a>
+            <!-- Btn -->
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav"
+                id="navbar-toggler" aria-expanded="false" aria-label="Barra de navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Items -->
+            <div class="collapse navbar-collapse" id="mainNav">
+                <div class="nav ms-auto flex-column flex-md-row text-light">
+                    <a href="#inicio" class="nav-link active">Inicio</a>
+                    <a href="#servicios" class="nav-link">Servicios</a>
+                    <a href="#acercade" class="nav-link">Acerca de</a>
+                    <a href="#contacto" class="nav-link">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--==================== MAIN ====================-->
+    <main class="container" data-spy="scroll" data-target="#mainNav" data-offset="0">
+        <!-- Inicio -->
+        <section id="inicio">
+            <header>
+                <div class="row pt-5">
+                    <!-- Descripción -->
+                    <div class="col-12 col-md-6 text-md-start">
+                        <h1 class="pt-5 ">BarberShop Kali</h1>
+                        <h3 class="fs-6 fw-light text-muted">El mejor estilo al mejor precio</h3>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere officiis nisi voluptatem,
+                            quis
+                            corporis enim tenetur ducimus sapiente, laudantium delectus fugit amet laboriosam dolores
+                            quisquam
+                            voluptates, veritatis in rem facilis.
+                        </p>
+
+                        <!-- Social networks -->
+                        <div>
+                            <!-- FB -->
+                            <a class="mx-1" href="https://www.facebook.com/" target="_blank">
+                                <i class="uil uil-facebook social__icon"></i>
+                            </a>
+                            <!-- WT -->
+                            <a class="mx-1" href="https://wa.me/" target="_blank">
+                                <i class="uil uil-whatsapp-alt social__icon"></i>
+                            </a>
+                            <!-- TG -->
+                            <a class="mx-1" href="https://telegram.me/" target="_blank">
+                                <i class="uil uil-telegram social__icon"></i>
+                            </a>
+                        </div>
+
+                        <div class="col-12 mt-lg-5">
+                            <!-- Buttons -->
+                            <div class="d-sm-flex justify-content-end">
+                                <a href="#acercade" class="btn btn-secondary ms-sm-3 mb-3">Más información</a>
+                                <a href="#contacto" class="btn btn-principal ms-sm-3 mb-3">
+                                    Contáctanos
+                                    <i class="uil uil-message"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Imágen -->
+                    <div class="col-12 col-md-6 d-md-flex justify-content-center">
+                        <img class="pt-5" src="/assets/img/home-image.jpg" alt="Imágen Inicio">
+                    </div>
+                </div>
+
+                <hr class="mt-5">
+            </header>
+        </section>
+
+        <!-- Servicios -->
+        <section class="row pt-5" id="servicios">
+            <div class="container col-12 pt-3">
+                <h2 class="text-center">Nuestros Servicios</h2>
+                <h3 class="text-center fs-6 fw-light text-muted">Conoce todo lo que ofrecemos</h3>
+
+                <div class="row my-3 d-flex justify-content-center justify-content-sm-between">
+                    <!-- Card Service 1 -->
+                    <div class="card col-10 col-sm-5 col-lg-3 my-3 ms-1 p-3 text-center aling-items-center shadow">
+                        <h3>Cortes</h3>
+                        <h4 class="fs-6 fw-light text-muted">De cabello y barba</h4>
+                        <div class="row justify-content-center mb-3">
+                            <img class="w-50 service__icon" src="/assets/img/service1.svg"
+                                alt="Corte de cabello y barba">
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis mollitia vel iusto
+                            eos. Ex voluptate provident beatae non magnam tempora.
+                        </p>
+                        <a href="#" class="btn btn-info fw-bolder my-2 text-light">Más</a>
+                    </div>
+                    <!-- Card Service 2 -->
+                    <div class="card col-10 col-sm-5 col-lg-3 my-3 ms-1 p-3 text-center aling-items-center shadow">
+                        <h3>Tratamientos</h3>
+                        <h4 class="fs-6 fw-light text-muted">Para cabello y barba</h4>
+                        <div class="row justify-content-center mb-3">
+                            <img class="w-50 service__icon" src="/assets/img/service2.svg"
+                                alt="Corte de cabello y barba">
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis mollitia vel iusto
+                            eos. Ex voluptate provident beatae non magnam tempora.
+                        </p>
+                        <a href="#" class="btn btn-info fw-bolder my-2 text-light">Más</a>
+                    </div>
+                    <!-- Card Service 3 -->
+                    <div class="card col-10 col-sm-5 col-lg-3 my-3 ms-1 p-3 text-center aling-items-center shadow">
+                        <h3>Productos</h3>
+                        <h4 class="fs-6 fw-light text-muted">Artículos y más</h4>
+                        <div class="row justify-content-center mb-3">
+                            <img class="w-50 service__icon" src="/assets/img/service3.svg"
+                                alt="Corte de cabello y barba">
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis mollitia vel iusto
+                            eos. Ex voluptate provident beatae non magnam tempora.
+                        </p>
+                        <a href="#" class="btn btn-info fw-bolder my-2 text-light">Más</a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="mt-5">
+        </section>
+
+        <!-- Acerca de  -->
+        <section class="row pt-5" id="acercade">
+            <div class="container col-12 pt-3">
+                <h2 class="text-center">Más Acerca de Nosotros</h2>
+                <h3 class="text-center fs-6 fw-light text-muted">¿Quiénes somos?</h3>
+
+                <div class="row d-flex flex-column flex-md-row align-items-center">
+                    <div class="col">
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam molestias reiciendis
+                            accusantium assumenda nam, doloremque impedit. Consectetur ipsam earum eligendi rerum eos,
+                            qui voluptates laboriosam quisquam ipsum adipisci aliquid totam.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat nemo, minima asperiores,
+                            voluptate, aut cumque cupiditate voluptatum corrupti blanditiis est odio animi quia
+                            necessitatibus pariatur unde dolor nulla at illo.
+                        </p>
+                    </div>
+                    <div class="col">
+                        <img class="rounded my-4" src="/assets/img/acercade-image.jpg" alt="Acerca de Kali">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section class="row pt-5" id="contacto">
+            <!-- Banner correo -->
+            <div class="row justify-content-center py-5">
+                <div class="col-9 col-lg-7 bg-white text-center py-4 px-4 mb-5 shadow position-relative photo-frame">
+                    <p class="h6 text-muted fw-light">
+                        Puedes enviarnos un correo
+                    </p>
+                    <a href="mailto:kali@correo.com" class="h3 text-decoration-none">
+                        <i class="uil uil-envelope"></i>
+                        kali@correo.com
+                    </a>
+                </div>
+                <div class="col-9 col-lg-7 bg-white text-center py-4 px-4 mb-5 shadow position-relative photo-frame">
+                    <p class="h6 text-muted fw-light">
+                        O escribenos un WhatsApp
+                    </p>
+                    <a href="https://wa.me/" class="h3 text-decoration-none">
+                        <i class="uil uil-whatsapp"></i>
+                        311 123 1234
+                    </a>
+                </div>
+            </div>
+            <div class="container col-12 pt-3">
+                <h2 class="text-center">¡Contáctanos ahora mismo!</h2>
+                <h3 class="text-center fs-6 fw-light text-muted">Agenda tu cita</h3>
+
+                <!-- Form -->
+                <form class="container needs-validation py-3" novalidate>
+                    <div class="form-group">
+                        <label for="name">Nombre:</label>
+                        <input title="Escribe tu nombre completo" type="text" class="bg-light outline-none form-control"
+                            id="name" placeholder="Nombre completo" required>
+                        <div class="invalid-feedback">
+                            Por favor escribe un nombre válido.
+                        </div>
+                    </div>
+                    <div class="row mb-0">
+                        <div class="form-group col-12 col-md-6">
+                            <label for="email">Email:</label>
+                            <input title="Escribe tu correo electrónico" type="email"
+                                class="bg-light outline-none form-control" id="email"
+                                placeholder="Ejemplo: correo@correo.com" required>
+                            <div class="invalid-feedback">
+                                Por favor otorga un correo válido.
+                            </div>
+                        </div>
+                        <div class="form-group col-12 col-md-6">
+                            <label for="subject">Asunto:</label>
+                            <input title="Escribe el asunto para el mensaje" type="text"
+                                class="bg-light outline-none form-control"
+                                placeholder="Asunto, motivo o servicios requeridos" id="subject" required>
+                            <div class="invalid-feedback">
+                                Please write a subject valid.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje:</label>
+                        <textarea title="Escribe tu mensaje" class="bg-light outline-none form-control" id="message"
+                            rows="4" placeholder="Dudas, comentarios, más datos" required></textarea>
+                        <div class="invalid-feedback">
+                            Por favor escribe un mensaje.
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12 d-flex justify-content-center justify-content-md-end">
+                            <button type="submit" class="btn btn-principal text-light col-12 col-md-3">
+                                Enviar
+                                <i class="uil uil-message"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-principal text-center p-4">
+        <p class="text-light fw-bold">
+            &copy; Jorge de Jesús Pérez López. All rights reserved.
+        </p>
+    </footer>
+
+    <!-- Btn Up -->
+    <a href="#" class="btn text-light btnUp zindex-dropdown px-3 position-fixed" id="scroll-up">
+        &#708;</a>
+
+    <!-- Bootstrap 5 -->
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <!-- JS -->
+    <script src="/assets/js/main.js"></script>
+</body>
+
+</html>
