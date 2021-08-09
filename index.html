@@ -58,7 +58,8 @@
                 <div class="nav ms-auto flex-column flex-md-row text-light">
                     <a href="#inicio" class="nav-link active">Inicio</a>
                     <a href="#servicios" class="nav-link">Servicios</a>
-                    <a href="#acercade" class="nav-link">Acerca de</a>
+                    <a href="#galeria" class="nav-link">Galería</a>
+                    <a href="#nosotros" class="nav-link">Nosotros</a>
                     <a href="#contacto" class="nav-link">Contacto</a>
                 </div>
             </div>
@@ -67,7 +68,6 @@
 
     <!-- Div para el scrollspy -->
     <div data-spy="scroll" data-target="#mainNav" data-offset="0">
-
         <!--==================== MAIN ====================-->
         <main class="container">
             <!-- Inicio -->
@@ -78,6 +78,10 @@
                         <div class="col-12 col-md-6 text-md-start">
                             <h1 class="pt-5 ">BarberShop Kali</h1>
                             <h3 class="fs-6 fw-light text-muted">El mejor estilo al mejor precio</h3>
+                            <p>
+                                <i class="uil uil-map-marker-shield"></i>
+                                Guadalajara, Jalisco, México.
+                            </p>
                             <p>
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere officiis nisi
                                 voluptatem,
@@ -107,7 +111,7 @@
                             <div class="col-12 mt-lg-5">
                                 <!-- Buttons -->
                                 <div class="d-sm-flex justify-content-end">
-                                    <a href="#acercade" class="btn btn-secondary ms-sm-3 mb-3">Más información</a>
+                                    <a href="#nosotros" class="btn btn-secondary ms-sm-3 mb-3">Más información</a>
                                     <a href="#contacto" class="btn btn-principal ms-sm-3 mb-3">
                                         Contáctanos
                                         <i class="uil uil-message"></i>
@@ -180,8 +184,94 @@
                 <hr class="mt-5">
             </section>
 
-            <!-- Acerca de  -->
-            <section class="row pt-5" id="acercade">
+            <!-- Galería -->
+            <section id="galeria">
+                <main class="row justify-content-center pt-5 sec-portfolio-js">
+                    <!-- Column #1 -->
+                    <div class="col-10 col-md-4 order-2 order-md-1 pt-md-5">
+                        <div class="row">
+                            <!-- IMG 1 -->
+                            <a href="#" class="col-12 mb-3 portfolio-item" data-bs-toggle="modal"
+                                data-bs-target="#modal-portfolio">
+                                <img src="/assets/img/galeria-03.jpg" alt="Imágen Galería"
+                                    class="w-100 img-btn-modal-js">
+                            </a>
+                            <!-- IMG 2 -->
+                            <a href="#" class="col-12 mb-3 portfolio-item" data-bs-toggle="modal"
+                                data-bs-target="#modal-portfolio">
+                                <img src="/assets/img/galeria-04.jpg" alt="Imágen Galería"
+                                    class="w-100 img-btn-modal-js">
+                            </a>
+                            <!-- IMG 3 -->
+                            <a href="#" class="col-12 mb-3 portfolio-item" data-bs-toggle="modal"
+                                data-bs-target="#modal-portfolio">
+                                <img src="/assets/img/galeria-01.jpg" alt="Imágen Galería"
+                                    class="w-100 img-btn-modal-js">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Column #2 -->
+                    <div class="col-10 col-md-8 order-1 order-md-2">
+                        <h2 class="col-12 py-3 text-end display-4">Galería</h2>
+                        <!-- IMG 1 -->
+                        <a href="#" class="col-12 mb-3 portfolio-item" data-bs-toggle="modal"
+                            data-bs-target="#modal-portfolio">
+                            <img src="/assets/img/galeria-06.jpg" alt="Imágen Galería" class="w-100 img-btn-modal-js">
+                        </a>
+                        <div class="row">
+                            <!-- IMG 2 -->
+                            <a href="#" class="col-12 col-md-6 my-3 portfolio-item" data-bs-toggle="modal"
+                                data-bs-target="#modal-portfolio">
+                                <img src="/assets/img/galeria-02.jpg" alt="Imágen Galería"
+                                    class="w-100 img-btn-modal-js">
+                            </a>
+                            <!-- IMG 3 -->
+                            <a href="#" class="col-12 col-md-6 my-3 portfolio-item" data-bs-toggle="modal"
+                                data-bs-target="#modal-portfolio">
+                                <img src="/assets/img/galeria-05.jpg" alt="Imágen Galería"
+                                    class="w-100 img-btn-modal-js">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- General modal -->
+                    <div class="col-9 modal fade" id="modal-portfolio">
+                        <div class="modal-dialog position-relative modal-dialog-center">
+                            <img src="" alt="" class="w-100 img-modal-js">
+                        </div>
+                    </div>
+                </main>
+            </section>
+
+            <!-- Nuestras Marcas -->
+            <div class="bg-principal d-flex flex-wrap">
+                <!-- Brands -->
+                <div class="container">
+                    <div class="row">
+                        <h2 class="text-center text-light pt-3">Nuestras Marcas</h2>
+                    </div>
+                    <div class="row align-items-center justify-content-around py-5">
+                        <!-- Marca 1 -->
+                        <div class="pb-3 col-5 col-md-3">
+                            <img src="/assets/img/brand_01.png" alt="Suavecito" class="w-75">
+                        </div>
+                        <!-- Marca 2 -->
+                        <div class="pb-3 col-5 col-md-3">
+                            <img src="/assets/img/brand_02.png" alt="Mel Bros Co" class="w-75">
+                        </div>
+                        <!-- Marca 3 -->
+                        <div class="pb-3 col-5 col-md-3">
+                            <img src="/assets/img/brand_03.png" alt="Crew" class="w-75">
+                        </div>
+                        <!-- Marca 4 -->
+                        <div class="pb-3 col-5 col-md-3">
+                            <img src="/assets/img/brand_04.png" alt="Porfirio Díaz" class="w-75">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nosotros  -->
+            <section class="row pt-5" id="nosotros">
                 <div class="container col-12 pt-3">
                     <h2 class="text-center">Más Acerca de Nosotros</h2>
                     <h3 class="text-center fs-6 fw-light text-muted">¿Quiénes somos?</h3>
@@ -202,7 +292,7 @@
                             </p>
                         </div>
                         <div class="col">
-                            <img class="rounded mt-4" src="/assets/img/acercade-image.jpg" alt="Acerca de Kali">
+                            <img class="rounded mt-4" src="/assets/img/nosotros-image.jpg" alt="Acerca de Kali">
                         </div>
                     </div>
                 </div>
@@ -210,6 +300,13 @@
 
             <!-- Contacto -->
             <section class="row pt-5" id="contacto">
+                <!-- Mapa -->
+                <div class="row py-5 mx-auto">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119452.57081260368!2d-103.40545409836508!3d20.67393832340609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b18cb52fd39b%3A0xd63d9302bf865750!2sGuadalajara%2C%20Jal.!5e0!3m2!1ses!2smx!4v1628533214470!5m2!1ses!2smx"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
                 <!-- Banner correo -->
                 <div class="row justify-content-center py-5">
                     <div
@@ -294,7 +391,7 @@
         <!-- Footer -->
         <footer class="bg-principal text-center p-4">
             <p class="text-light fw-bold">
-                &copy; Jorge de Jesús Pérez López. All rights reserved.
+                &copy; Jorge de Jesús Pérez López. Todos los derechos reservados.
             </p>
         </footer>
 

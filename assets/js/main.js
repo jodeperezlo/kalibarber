@@ -1,12 +1,34 @@
 //*===========================================================*/
 //                      SCROLLSPY
 //*===========================================================*/
-var scrollSpy = new bootstrap.ScrollSpy(document.body, {target: '#mainNav'});
-var dataSpyList = [].slice.call(document.querySelectorAll('[data-bs-spy="scroll"]'));
+// var scrollSpy = new bootstrap.ScrollSpy(document.body, {target: '#mainNav'});
 
-dataSpyList.forEach( dataSpyEl => {
-    bootstrap.ScrollSpy.getInstance(dataSpyEl).refresh();    
-});
+// var dataSpyList = [].slice.call(document.querySelectorAll('[data-bs-spy="scroll"]'));
+
+// dataSpyList.forEach( dataSpyEl => {
+//     bootstrap.ScrollSpy.getInstance(dataSpyEl).refresh();    
+// });
+
+/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
+const sections = document.querySelectorAll('section[id]')
+
+function scrollActive(){
+    const scrollY = window.pageYOffset
+
+    sections.forEach(current =>{
+        const sectionHeight = current.offsetHeight
+        const sectionTop = current.offsetTop - 50;
+        sectionId = current.getAttribute('id')
+
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){            
+            document.querySelector('.nav a[href*=' + sectionId + ']').classList.add('active');           
+        }
+        else{            
+            document.querySelector('.nav a[href*=' + sectionId + ']').classList.remove('active');
+        }
+    })
+}
+window.addEventListener('scroll', scrollActive)
 
 //*===========================================================*/
 //                      NAVBAR
@@ -22,8 +44,23 @@ function linkAction(){
     const mainNav = document.getElementById('mainNav');
     // When we click on each nav__link, we remove the show-menu class
     navToggler.classList.add('collapsed');
+    navToggler.setAttribute("aria-expanded",false);
     mainNav.classList.remove('show');
 }
+//*===========================================================*/
+//                      GALERÍA
+//*===========================================================*/
+const portfolio = document.querySelector('.sec-portfolio-js');
+const modalImgPortfolio = document.querySelector('.img-modal-js');
+
+portfolio.addEventListener('click', e => {
+    if(e.target.classList.contains('img-btn-modal-js')){
+        // SRC
+        let urlImg = e.target.attributes[0].nodeValue;
+        // Add modal
+        modalImgPortfolio.src = urlImg;
+    }
+});
 
 //*===========================================================*/
 //                      VALIDATE FORM
@@ -42,11 +79,10 @@ function linkAction(){
             event.preventDefault()
             event.stopPropagation()
           }
-  
           form.classList.add('was-validated')
-        }, false)
-      })
-  })()
+        }, false);
+      });
+  })();
 
 //*===========================================================*/
 //                      BTN UP
