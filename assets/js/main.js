@@ -1,14 +1,3 @@
-//*===========================================================*/
-//                      SCROLLSPY
-//*===========================================================*/
-// var scrollSpy = new bootstrap.ScrollSpy(document.body, {target: '#mainNav'});
-
-// var dataSpyList = [].slice.call(document.querySelectorAll('[data-bs-spy="scroll"]'));
-
-// dataSpyList.forEach( dataSpyEl => {
-//     bootstrap.ScrollSpy.getInstance(dataSpyEl).refresh();    
-// });
-
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
 
